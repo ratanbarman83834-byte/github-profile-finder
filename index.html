@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Profile Finder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-top">
+        <h1>🐙 GitHub Profile Finder</h1>
+        <p>Search GitHub profiles by username</p>
+      </div>
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Enter GitHub username..."
+        />
+        <button id="searchBtn">Search</button>
+        <span id="errorMessage"></span>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <div class="logo-box"><img src="" alt="" id="logo" /></div>
+
+        <p id="name"></p>
+        <p id="userName">Search GitHub profiles by username</p>
+        <p id="userInfo"></p>
+
+        <div class="follow-box">
+          <div class="followers-box">
+            <p>👥 Followers</p>
+            <span id="followers">2</span>
+          </div>
+
+          <div class="following-box">
+            <p>👤 Following</p>
+            <span id="following">0</span>
+          </div>
+        </div>
+
+        <div class="repo-join-box">
+          <div class="repo-box">
+            <p>📦 Repositories</p>
+            <span id="repo">17</span>
+          </div>
+
+          <div class="join-box">
+            <p>📅 Joined</p>
+            <span id="joined">2025</span>
+          </div>
+        </div>
+
+        <button id="viewProfileBtn">
+          <a href="#" id="viewProfile">
+            View Profile <span class="arrow">→</span>
+          </a>
+        </button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
